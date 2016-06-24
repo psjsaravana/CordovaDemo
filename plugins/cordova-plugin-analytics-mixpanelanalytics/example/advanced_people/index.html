@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
+
+<script>
+
+var token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+/*
+var token;
+//android
+if (navigator.userAgent.match(/Android/i)) {
+	token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+}
+//ios
+else if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+	token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+}
+*/
+
+document.addEventListener("deviceready", function(){
+	window.mixpanelanalytics.setUp(token);
+}, false);
+                          
+</script>
+
+<p><button onclick="window.mixpanelanalytics.identifyPeople('13793');">identifyPeople</button></p>
+<p><button onclick="window.mixpanelanalytics.addPeopleProperty('Plan', 'Premium');">addPeopleProperty</button></p>
+<p><button onclick="window.mixpanelanalytics.changePeopleProperties();">changePeopleProperties</button></p>
+<br>
+<p><button onclick="window.mixpanelanalytics.identifyPeople('13793');">identifyPeople</button></p>
+<p><button onclick="window.mixpanelanalytics.incrementPeopleProperty('points earned', 1);">incrementPeopleProperty</button></p>
+<br>
+<p><button onclick="window.mixpanelanalytics.identifyPeople('13793');">identifyPeople</button></p>
+<p><button onclick="window.mixpanelanalytics.deletePeople();">deletePeople</button></p>
+
+</body>
+</html>

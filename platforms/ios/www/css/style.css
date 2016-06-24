@@ -1,0 +1,40 @@
+/* Empty. Add your own CSS if you like */
+.main-view {
+    background-color:#1C1952;
+}
+ion-view {
+    background-color:transparent !important;
+}
+ion-item{
+    background-color: #C6C5D4 !important;
+    border-radius: 5px !important;
+    margin-bottom: 3px !important;
+}
+
+.bar-header {
+    background-color: #D1D1E0 !important;
+    margin:auto 5px ;
+    width: auto;
+    text-align: center;
+}
+
+#cameraImageContainer {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: 1px solid #C6C5D4;
+    border-radius: 5px !important;
+}
+
+.cameraButton {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 10%;
+}
+
+.contacts-text-field {
+    width: 100%;
+    border-radius: 5px !important;
+    margin: 5px auto !important;
+}

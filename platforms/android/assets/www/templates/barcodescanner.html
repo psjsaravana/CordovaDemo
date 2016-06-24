@@ -1,0 +1,13 @@
+<ion-view view-title="Barcode Scanner">
+  <ion-content class="padding">
+    <button ng-click="scanCode()" class="cameraButton">Scan Barcode</button>
+    <div id="cameraImageContainer" style="background-color: white;">
+    	<div style="padding:30px 30px 10px 30px">
+    		<span>Result   :</span><a id="barcodeAnchor" href="">{{barcodeInfo.text}}</a>
+    	</div>
+    	<div style="padding: 10px 30px;">
+    		<span>Format       :</span>{{barcodeInfo.format}}
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="Welcome">
+  <ion-content class="padding">
+    <div id="list-container">
+    	<ion-list>
+	    	<ion-item class="animate-repeat" ng-repeat="item in listItems">
+	    		<div ng-click="listItemTap(item.name)">
+		    		<span>{{item.name}}</span>
+		    		<span class="ion-chevron-right" style="float:right"></span>
+	    		</div>
+	    	</ion-item>
+    	</ion-list>
+    </div>
+  </ion-content>
+</ion-view>

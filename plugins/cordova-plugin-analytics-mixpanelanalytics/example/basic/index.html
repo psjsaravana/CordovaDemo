@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
+
+<script>
+
+var token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+/*
+var token;
+//android
+if (navigator.userAgent.match(/Android/i)) {
+	token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+}
+//ios
+else if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+	token = "REPLACE_THIS_WITH_YOUR_TOKEN";
+}
+*/
+
+document.addEventListener("deviceready", function(){
+	window.mixpanelanalytics.setUp(token);
+}, false);
+                          
+</script>
+
+<p><button onclick="window.mixpanelanalytics.trackEvent('Home');">trackEvent</button></p>
+
+</body>
+</html>

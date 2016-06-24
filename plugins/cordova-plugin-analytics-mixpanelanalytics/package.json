@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-analytics-mixpanelanalytics",
+  "version": "1.0.40",
+  "description": "Cordova MixpanelAnalytics plugin",
+  "cordova": {
+    "id": "cordova-plugin-analytics-mixpanelanalytics",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranberrygame/cordova-plugin-analytics-mixpanelanalytics.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "analytics",
+    "mixpanelanalytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "cranberrygame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cranberrygame/cordova-plugin-analytics-mixpanelanalytics/issues"
+  },
+  "homepage": "https://github.com/cranberrygame/cordova-plugin-analytics-mixpanelanalytics#readme"
+}

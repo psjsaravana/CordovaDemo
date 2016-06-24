@@ -1,0 +1,16 @@
+<ion-view view-title="Contacts" ng-init="getAllContacts()">
+  <ion-content class="padding">
+    <input type="text" placeholder="Search" ng-model="contactSearch" ng-change="getContactsByName(contactSearch)" class="contacts-text-field"/>
+    <div id="contactsContainer">
+    <ion-content style="margin-top: 45px;">
+    	<ion-list>
+	    	<ion-item class="animate-repeat" ng-repeat="item in contactsList" ng-if="item.displayName">
+	    		<div ng-click="">
+		    		<span>{{item.displayName}}</span>
+	    		</div>
+	    	</ion-item>
+    	</ion-list>
+    </ion-content>
+    </div>
+  </ion-content>
+</ion-view>
